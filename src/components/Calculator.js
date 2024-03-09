@@ -18,7 +18,9 @@ function Calculator() {
 
   const calculate = () => {
     try {
-      setResult(eval(result).toString());
+      // Utilizar Function constructor para evaluar la expresión de forma segura
+      const calculatedResult = new Function('return ' + result)();
+      setResult(calculatedResult.toString());
     } catch (error) {
       setResult('Error');
     }
