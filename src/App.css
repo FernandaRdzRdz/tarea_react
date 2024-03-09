@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  height: 700px;
+  
+}
+
+body{
+  background-image: url("https://i.pinimg.com/originals/9b/6e/4b/9b6e4b6f6738007699708585d76f9107.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0 auto;
+  background: #002FA7;
+  width: 400px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.App-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family:monospace;
+  font-size: 100%;
+  color:aliceblue;
+}
+
+.container{
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 50px;
+  background: #002FA7;
+  height: 400px;
+}
