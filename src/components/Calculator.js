@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Calculator.css';
+import { evaluate } from 'mathjs';
+
 
 function Calculator() {
   const [result, setResult] = useState('');
@@ -18,13 +20,13 @@ function Calculator() {
 
   const calculate = () => {
     try {
-      // Utilizar Function constructor para evaluar la expresión de forma segura
-      const calculatedResult = new Function('return ' + result)();
+      const calculatedResult = evaluate(result);
       setResult(calculatedResult.toString());
     } catch (error) {
       setResult('Error');
     }
   };
+  
 
   return (
     <div className="calculator">
